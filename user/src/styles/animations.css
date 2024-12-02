@@ -1,0 +1,24 @@
+/* styles.css */
+@keyframes shake {
+    0% {
+      transform: translate(0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-3px, 0) rotate(3deg); /* Влево и немного повернуть */
+    }
+    50% {
+      transform: translate(3px, 0) rotate(-3deg); /* Вправо и немного повернуть */
+    }
+    75% {
+      transform: translate(-3px, 0) rotate(3deg); /* Влево и немного повернуть */
+    }
+    100% {
+      transform: translate(0) rotate(0deg); /* Возврат в исходное положение */
+    }
+  }
+  
+  .shake-rotate {
+    animation: shake 3s linear infinite;
+    transform-origin: 50% 70%;
+  }
+  

@@ -1,0 +1,38 @@
+.profile-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.profile-left {
+    flex: 30%;
+    margin-right: 10px;
+}
+
+.profile-right {
+    flex: 60%;
+    margin-left: 10px;
+    padding: 0px 8px 8px 15px;
+}
+
+.recharts-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.recharts-responsive-container {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.profile-usercard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 8px;
+    width: 100%;
+    aspect-ratio: 1/1.33;
+}

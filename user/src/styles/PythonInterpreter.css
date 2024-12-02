@@ -1,0 +1,93 @@
+.python-interpreter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  border: 2px solid black; 
+  border-bottom: 0px;
+}
+
+.interpreter-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 5px 0px 0px; 
+}
+
+.error-message {
+  color: red;
+}
+
+.output-container {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.history-container {
+  margin-top: 20px;
+}
+
+.history-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-container li {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: background-color 0.3s;
+}
+
+.history-container li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Респонсивные стили */
+@media (max-width: 600px) {
+  .python-interpreter {
+    padding: 10px;
+  }
+
+  .interpreter-controls {
+    flex-direction: column;
+  }
+
+  .interpreter-controls button {
+    margin-bottom: 10px;
+  }
+}
+  
+.interpreter-output {
+  border: 2px solid black;
+  width: 100%;
+  p {
+    padding-left: 20px;
+    white-space: 'pre-wrap';
+  }
+}
+
+.error-message {
+  color: red;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.error-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.interpreter-output {
+  border: 2px solid black;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.interpreter-output.error {
+  background-color: #ffe6e6; /* Цвет фона при ошибке */
+}

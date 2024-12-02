@@ -1,0 +1,53 @@
+.bordered-editor {
+    border: 2px solid black;
+    border-radius: 16px;
+}
+
+.task-editor {
+    display: flex;
+    flex-direction: row;
+    min-height: 80vh;
+    margin-top: 20px;  
+}
+
+.task-editor-left {
+    flex: 25%;
+    margin: 10px 20px 0px 00px;
+
+}
+
+.task-editor-right {
+    flex: 75%;
+    margin: 10px 0px 0px 20px;
+}
+
+.editor-tasks-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 5px; 
+    cursor: pointer;
+
+    img {
+        margin: 0px 10px;
+        width: 30px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 50%;
+        padding: 4px;
+        transition: opacity 0.5s ease;
+    }
+    
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.editor-tasks-editing {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 10px 16px; 
+    cursor: pointer;
+}

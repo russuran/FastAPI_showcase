@@ -1,0 +1,41 @@
+.admin-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 20px;
+    height: 100vh;
+}
+
+.ap-left {
+    flex: 15%;
+    border: 2px solid black;
+    border-radius: 16px;
+    height: 100vh;
+    min-width: 100px;
+}
+
+.ap-right {
+    flex: 80%;
+    border: 2px solid black;
+    border-radius: 16px;
+    height: 100vh;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .admin-panel {
+        flex-direction: column;
+    }
+
+    .ap-right {
+        flex: 50%;
+        margin-left: 0px;   
+    }
+
+    .ap-left {
+        flex: 20%;
+        margin-top: 20px;
+        height: 300px;
+    }
+}
